@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27');
+
+body {
+    font-family: "Playfair Display SC", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    min-width: 320px;
+    line-height: 1.5;
+    color:#031D40;
+}
+
+h1 {
+  font-family: "Playfair Display SC", serif;
+    color:#031D40;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*header*/
+.navbar {
+    background: #031D40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, padding 0.3s;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 15px 30px;
+}
+
+.top-menu li a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    transition: all .3s;
+    transform: scale(0);
+}
+
+.top-menu li a:hover::after {
+    transform: scale(1)
+}
+/*header*/
+
+/*carousel*/
+.my-carousel {
+  margin-top: 130px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.my-carousel .carousel-item {
+    display: flex;
+}
+
+.my-carousel .carousel-item img {
+    width: 100%;
+    object-fit: cover;
+}
+/*carousel*/
+
+/* Main_text*/
+.main-inner {
+    color: #031D40;
+}
+
+.main-inner h1{
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+}
+
+.main-inner p {
+    font-family: "Niramit", serif;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+/* Main_text*/
+
+/* review-card*/
+.review-container {
+
+    display: flex;
+    justify-content: center;
+    color: #031D40;
+    margin-bottom: 50px;
+  }
+
+.review-card {
+    border: 2px solid #f28b82;
+    border-radius: 30px;
+    max-width: 700px;
+    background: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  
+  .review-text {
+    font-size: 14px;
+    font-family: "Niramit", serif;
+    font-size: medium;
+    text-align: justify;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 25px;
+    
+    line-height: 2.0;
+  }
+  
+  .review-footer {
+    margin-top: 10px;
+    margin-left: 85px;
+  }
+  
+  .review-author {
+    font-weight: bold;
+    font-size: 20px;
+
+    text-transform: uppercase;
+  }
+  
+  .review-stars {
+    color: #eb621d;
+    font-size: 18px;
+    padding-bottom: 15px;
+  }  
+/* review-card*/
+
+/* footer*/
+.footer {
+  background-color: #031D40;
+}
+
+.footer-padding {
+  padding: 30px;
+}
+
+.footer-table {
+  text-align: left;
+  color: #fff;
+  font-family: "Niramit", serif;
+}
+
+.column2 {
+  padding-left: 20px;
+}
+
+.footer p {
+  color: #fff;
+  font-family: "Niramit", serif;
+}
+
+.footer h4 {
+  color: #cf8206;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.footer a {
+  font-family: "Niramit", serif;
+  color:#9ec0ff;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.footer a:hover {
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.footer_social img {
+  transition: opacity 0.3s ease;
+}
+
+.footer_social:hover img {
+  opacity: 0.8;
+}
+
+.icon {
+  background-image: url('images/icons.png');
+  background-size: 180px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  
+}
+
+.icon_git {
+  background-position: 122px 0px;
+}
+
+.icon_btc {
+  background-position: 244px 0px;
+}
+
+.adress-pad {
+   padding-bottom: 50px;
+}
+
+.time {
+  padding-bottom: 50px;
+}
+
+.admin {
+  text-align: center;
+  padding: 5px;
+}
+/* footer*/
+
+
+/* servers */
+.service-img-row {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+  object-fit: cover; 
+
+  padding-top: 130px;
+  padding-bottom: 20px;
+}
+
+.service-table tr td {
+  color: #031D40;
+  padding-top: 20px;
+  padding-bottom: 8px;
+  padding-right: 15px
+}
+
+.column1 {
+
+  font-family: "Playfair Display SC", serif;
+}
+
+.column2 {
+
+  font-family: "Niramit", serif;
+}
+
+.p1,
+.p2 {
+  color: #7d0808;
+  text-align: center;
+}
+
+.p1 {
+  padding-top: 30px;
+  font-family: "Playfair Display SC", serif;
+}
+
+.p2 {
+  font-family: "Niramit", serif;
+  font-size: 14px;
+}
+
+.service-img-row img {
+  max-width: 100%;
+}
+
+.product-img-row {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.product-img-row img {
+  max-width: 100%;
+}
+/* servers */
+
+
+
+/* CONTACT */
+
+.contact-headding-row {
+  padding-top: 130px;
+}
+
+.contact-headding-row p{
+  font-family: "Niramit", serif;
+}
+
+.required-field-note {
+  color: #e74c3c;
+  padding-bottom: 10px;
+}
+
+.formfill input[type="text"],
+.formfill textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.formfill input[type="submit"] {
+  background-color: #031D40;
+  color: #ffffff; 
+  padding: 5px 10px;
+  border: none; 
+  border-radius: 5px;
+  font-family: "Niramit", serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+/* Эффект при наведении на кнопку */
+.formfill input[type="submit"]:hover {
+  background-color: #0d76ff;
+}
+/* CONTACT */
+
+/* registered*/
+
+
+
+
+.login-page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Niramit", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-page .wrapper {
+  width: 420px;
+  background: #031D40;
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.login-page .wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  font-family: "Niramit", serif;
+}
+
+.login-page .wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.login-page .input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.login-page .input-box input::placeholder {
+  color: #fff;
+}
+
+.login-page .input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.login-page .wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #031D40; 
+  transition: background-color 0.3s ease;
+}
+
+.login-page .wrapper .btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* registered*/
+
+
+/* aadapriv */
+
+@media (max-width: 1200px) {
+  
+}
+@media (max-width: 1000px) {
+  
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+ 
+}
+
+@media (max-width: 448px) {
+  
+}
+/* aadapriv */
