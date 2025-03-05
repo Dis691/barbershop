@@ -8,10 +8,11 @@ $number = $_POST['number'] ?? '';
 $message = $_POST['message'] ?? '';
 
 if (empty(trim($name)) || empty(trim($number)) || empty(trim($message))) {
-	header("Location: contact.html");
+	echo json_encode(["success" => false, "message" => "All fields required"]);
+	exit;
 }
 
 $stmt = $pdo->prepare("INSERT INTO submission (name, number, message) VALUES (?, ?, ?)");
 $stmt->execute([$name, $number, $message]);
 
-header("Location: contact.html");
+echo json_encode(["success" => true, "message" => "Saved successfully"]);
